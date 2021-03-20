@@ -18,7 +18,7 @@ btn.addEventListener("click", function() {
 
 
     if (!inpust.value == "") {
-        list.innerHTML = `<div class="cart">
+        list.innerHTML += `<div class="cart">
          <p>${producto.value}</p>
           <p>${precio.value}</p>
          <p>${fecha.value}</p>
