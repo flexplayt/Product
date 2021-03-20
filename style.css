@@ -1,6 +1,5 @@
 body {
-    background-color: rgb(202, 202, 202);
-    height: 100vh;
+    background-color: rgb(223, 223, 223);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -10,4 +9,180 @@ body {
     text-decoration: none;
     margin: 0;
     box-sizing: border-box;
+}
+
+
+/* ======================> Header  <====================== */
+
+header {
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 0px 30px 0px #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    font-weight: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li a {
+    padding: 10px;
+    font-size: 17px;
+    color: black;
+}
+
+
+/* ======================>  Agregador <====================== */
+
+.contenedor {
+    padding: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.add {
+    width: 95%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    height: 300px;
+    position: sticky;
+    top: 0;
+}
+
+.add input,
+button {
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(223, 223, 223);
+}
+
+.add input {
+    outline-color: rgba(0, 60, 255, 0.39);
+}
+
+.add #btn {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ======================> Carta  <====================== */
+
+.t {
+    width: 90%;
+    max-width: 700px;
+}
+
+.t .agregado {
+    margin: auto;
+    width: 100%;
+}
+
+.contenedor .t .list .cart {
+    width: 95%;
+    padding: 7px;
+    margin-top: 10px;
+    background: white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* box-shadow: 0px 40px 90px 10px #000; */
+}
+
+.contenedor .t .list .cart #delete {
+    padding: 10px;
+    outline: none !important;
+    width: 100px;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.774);
+    color: white;
+}
+
+.list .cart p {
+    font-size: 18px;
+}
+
+.contenedor .t .list {
+    width: 100%;
+}
+
+.list h2 {
+    font-weight: 100;
+}
+
+
+/* ======================>  agregado <====================== */
+
+.exito {
+    padding: 12px;
+    width: 80%;
+    background-color: seagreen;
+    color: seashell;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+
+/* ======================> error  <====================== */
+
+.error {
+    padding: 12px;
+    width: 95%;
+    margin: 30px auto;
+    background-color: #009dffa2;
+    color: seashell;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ======================>  Removido <====================== */
+
+.remove {
+    padding: 12px;
+    width: 80%;
+    background-color: rgba(255, 0, 0, 0.774);
+    color: seashell;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.agregado h1 {
+    margin-left: 10px;
+    font-size: 19px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* ======================> Responsive  <====================== */
+
+@media screen and (max-width:900px) {
+    .t {
+        margin: auto;
+        width: 100%;
+    }
 }
